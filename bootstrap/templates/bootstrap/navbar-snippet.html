@@ -1,0 +1,24 @@
+<a class="brand" href="/">Project</a>
+<div class="nav-collapse">
+  {% block navbar %}
+    <ul class="nav">
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <p class="navbar-text pull-right">
+      {% if request.user %}
+        Logged in as <a href="#">{{ request.user }}</a>
+      {% else %}
+        Anonymous user
+      {% endif %}
+    </p>
+  {% endblock %}
+  </ul>
+</div>

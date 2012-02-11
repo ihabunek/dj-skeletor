@@ -1,0 +1,37 @@
+{% extends "bootstrap/base.html" %}
+
+{% block body %}
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          {% include "bootstrap/navbar-snippet.html" %}
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      {% block container %}
+        <div class="hero-unit">
+          <h1>Hello, world!</h1>
+          <p>
+            Welcome to your new web app, powered by Django and Twitter Bootstrap!
+          </p>
+          <p>
+            <a href="http://twitter.github.com/bootstrap/" class="btn btn-primary btn-large">Learn more about Twitter Bootstrap »</a>
+          </p>
+        </div>
+
+        <h2>Fluid Layout Starter Template</h2>
+        <p>
+          Use this document as a way to quick start any new project.
+          A <a href="{% url bootstrap_hello_fixed %}">fixed version</a> is also available.
+        </p>
+      {% endblock %}
+      <hr>
+      <footer>
+        {% block footer %}
+          <p>&copy; Company {% now "Y" %}</p>
+        {% endblock %}
+      </footer>
+    </div>
+{% endblock %}
