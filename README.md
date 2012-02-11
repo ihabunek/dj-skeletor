@@ -7,6 +7,9 @@ The repository contains an empty, relocatable Django project with South,
 Django Debug Toolbar and Sentry apps set, and with provisions for test and
 production settings.
 
+This version of DJ Skeletor includes Twitter Bootstrap HTML/CSS framework
+(version 2). The framework is included as a Django application 'bootstrap',
+which is added to the INSTALLED_APPS by default.
 
 ### Quick setup
 
@@ -72,3 +75,10 @@ Sentry is used in the integrated setup, ie. as an app inside the Django
 project. This makes things simpler when starting. When the project grows,
 or if you have several apps you need to monitor, consider switching to
 running Sentry in client/server mode.
+
+### Twitter Bootstrap
+
+Twitter Bootstrap is provided by the 'bootstrap' application, which has
+its own staticfiles (with the UI assets - images, css, javascript), a few
+starter templates (fixed and fluid layouts) and two example views to
+showcase the UI.
