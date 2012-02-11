@@ -118,6 +118,7 @@ INSTALLED_APPS = (
     'south',
     'sentry',
     'raven.contrib.django',
+    'bootstrap',
 )
 
 # Use Sentry for loging exceptions and catching logging.* calls
