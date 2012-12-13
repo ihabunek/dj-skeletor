@@ -30,7 +30,7 @@ optional and can be disabled.
 ### Quick setup
 
     # prepare the virtual environment
-    mkvirtualenv --no-site-packages myenv
+    mkvirtualenv myenv
 
     # get the skeleton project
     git clone https://github.com/senko/dj-skeletor.git myproject
